@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Techwind - Tailwind CSS Multipurpose Landing & Admin Dashboard Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Tailwind CSS Saas & Software Landing Page Template">
+        <meta name="keywords" content="agency, application, business, clean, creative, cryptocurrency, it solutions, modern, multipurpose, nft marketplace, portfolio, saas, software, tailwind css">
+        <meta name="author" content="Shreethemes">
+        <meta name="website" content="https://shreethemes.in">
+        <meta name="email" content="support@shreethemes.in">
+        <meta name="version" content="2.0.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Css -->
+        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+        <!-- Main Css -->
+        <link href="assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet">
+        <link href="assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/css/tailwind.css">
+
+    </head>
+    
+    <body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900">
+        <!-- Loader Start -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader End -->
+
+        
+        <!-- Start Navbar -->
+        <nav id="topnav" class="defaultscroll is-sticky bg-white dark:bg-slate-900">
+            <div class="container relative">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <img src="assets/images/logo-dark.png" class="inline-block dark:hidden" alt="">
+                    <img src="assets/images/logo-light.png" class="hidden dark:inline-block" alt="">
+                </a>
+
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <!--Login button Start-->
+                <ul class="buy-button list-none mb-0">
+                    <li class="dropdown inline-block relative me-1">
+                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle text-[20px]" type="button">
+                            <i class="uil uil-search align-middle"></i>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu absolute overflow-hidden end-0 m-0 mt-4 z-10 w-52 rounded-md bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 hidden" onclick="event.stopPropagation();">
+                            <div class="relative">
+                                <i class="uil uil-search text-lg absolute top-[3px] end-3"></i>
+                                <input type="text" class="form-input h-9 pe-10 sm:w-44 w-36 border-0 focus:ring-0" name="s" id="searchItem" placeholder="Search...">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropdown inline-block relative">
+                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle h-9 w-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white" type="button">
+                            <i class="mdi mdi-cart"></i>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu absolute end-0 m-0 mt-4 z-10 w-60 rounded-md bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 hidden" onclick="event.stopPropagation();">
+                            <ul class="py-3 text-start" aria-labelledby="dropdownDefault">
+                                <li>
+                                    <a href="#" class="flex items-center justify-between py-1.5 px-4">
+                                        <span class="flex items-center">
+                                            <img src="../../assets/images/shop/items/s1.jpg" class="rounded shadow dark:shadow-gray-800 w-9" alt="">
+                                            <span class="ms-3">
+                                                <span class="block font-semibold">T-shirt (M)</span>
+                                                <span class="block text-sm text-slate-400">$320 X 2</span>
+                                            </span>
+                                        </span>
+
+                                        <span class="font-semibold">$640</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center justify-between py-1.5 px-4">
+                                        <span class="flex items-center">
+                                            <img src="../../assets/images/shop/items/s2.jpg" class="rounded shadow dark:shadow-gray-800 w-9" alt="">
+                                            <span class="ms-3">
+                                                <span class="block font-semibold">Bag</span>
+                                                <span class="block text-sm text-slate-400">$50 X 5</span>
+                                            </span>
+                                        </span>
+
+                                        <span class="font-semibold">$250</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center justify-between py-1.5 px-4">
+                                        <span class="flex items-center">
+                                            <img src="../../assets/images/shop/items/s3.jpg" class="rounded shadow dark:shadow-gray-800 w-9" alt="">
+                                            <span class="ms-3">
+                                                <span class="block font-semibold">Watch (Men)</span>
+                                                <span class="block text-sm text-slate-400">$800 X 1</span>
+                                            </span>
+                                        </span>
+
+                                        <span class="font-semibold">$800</span>
+                                    </a>
+                                </li>
+
+                                <li class="border-t border-gray-100 dark:border-gray-800 my-2"></li>
+
+                                <li class="flex items-center justify-between py-1.5 px-4">
+                                    <h6 class="font-semibold mb-0">Total($):</h6>
+                                    <h6 class="font-semibold mb-0">$1690</h6>
+                                </li>
+
+                                <li class="py-1.5 px-4">
+                                    <a href="javascript:void(0)" class="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle duration-500 text-sm text-center rounded-md bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white">View Cart</a>
+                                    <a href="javascript:void(0)" class="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle duration-500 text-sm text-center rounded-md bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white">Checkout</a>
+                                    <p class="text-sm text-slate-400 mt-1">*T&C Apply</p>
+                                </li>
+                        
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="inline-block">
+                        <a href="javascript:void(0)" class="h-9 w-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white" data-modal-toggle="ContactUs">
+                            <i class="mdi mdi-heart"></i>
+                        </a>
+                    </li>
+            
+                    <li class="dropdown inline-block relative">
+                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle h-9 w-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white" type="button">
+                            <i class="mdi mdi-account"></i>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu absolute end-0 m-0 mt-4 z-10 w-44 rounded-md bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 hidden" onclick="event.stopPropagation();">
+                            <ul class="py-2 text-start" aria-labelledby="dropdownDefault">
+                                <li>
+                                    <a href="shop-account.html" class="block py-1.5 px-4 hover:text-indigo-600"><i class="uil uil-user align-middle me-1"></i> Account</a>
+                                </li>
+                                <li>
+                                    <a href="shop-cart.html" class="block py-1.5 px-4 hover:text-indigo-600"><i class="uil uil-clipboard-notes align-middle me-1"></i> Order History</a>
+                                </li>
+                                <li>
+                                    <a href="shop-checkout.html" class="block py-1.5 px-4 hover:text-indigo-600"><i class="uil uil-arrow-circle-down align-middle me-1"></i> Download</a>
+                                </li>
+                                <li class="border-t border-gray-100 dark:border-gray-800 my-2"></li>
+                                <li>
+                                    <a href="auth-login.html" class="block py-1.5 px-4 hover:text-indigo-600"><i class="uil uil-sign-out-alt align-middle me-1"></i> Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <!--Login button End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu">
+                        <li><a href="index-shop.html" class="sub-menu-item">Home</a></li>
+
+                        <li><a href="shop-about.html" class="sub-menu-item">About Us</a></li>
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Shop</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="shop-grid.html" class="sub-menu-item">Product Grid</a></li>
+                                <li><a href="shop-grid-two.html" class="sub-menu-item">Product Grid Two</a></li>
+                                <li><a href="shop-item-detail.html" class="sub-menu-item">Product Detail</a></li>
+                                <li><a href="shop-cart.html" class="sub-menu-item">Shop Cart</a></li>
+                                <li><a href="shop-checkout.html" class="sub-menu-item">Checkout</a></li>
+                                <li><a href="shop-account.html" class="sub-menu-item">My Account</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="auth-login.html" class="sub-menu-item">Login</a></li>
+                                <li><a href="auth-signup.html" class="sub-menu-item">Signup</a></li>
+                                <li><a href="auth-re-password.html" class="sub-menu-item">Reset Password</a></li>
+                                <li><a href="auth-lock-screen.html" class="sub-menu-item">Lock Screen</a></li>
+                                <li><a href="page-comingsoon.html" class="sub-menu-item">Coming Soon</a></li>
+                                <li><a href="page-maintenance.html" class="sub-menu-item">Maintenance</a></li>
+                                <li><a href="page-error.html" class="sub-menu-item">Error</a></li>
+                                <li><a href="page-thankyou.html" class="sub-menu-item">Thank you</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Blog</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="blog.html" class="sub-menu-item">Blogs</a></li>
+                                <li><a href="blog-sidebar.html" class="sub-menu-item">Blogs & Sidebar</a></li>
+                                <li><a href="blog-detail.html" class="sub-menu-item">Blog Detail</a></li>
+                            </ul>
+                        </li>
+                
+                        <li><a href="contact-two.html" class="sub-menu-item">Contact</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </nav><!--end header-->
+        <!-- End Navbar -->
+
+
+
+        <!-- Start Modal -->
+        <div id="ContactUs" tabindex="-1" class="fixed z-50 hidden overflow-hidden inset-0 m-auto">
+            <div class="relative w-full h-auto max-w-lg p-4">
+                <div class="relative bg-white dark:bg-slate-900 rounded-lg shadow dark:shadow-gray-800">
+                    <button type="button" class="absolute -top-4 -end-4 text-gray-400 bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 hover:text-gray-900 rounded-full text-sm p-1.5 ms-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="ContactUs">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                    </button>
+                    <div class="p-6 py-10 text-center">
+
+                        <div class="relative overflow-hidden text-transparent -m-3">
+                            <i data-feather="hexagon" class="h-32 w-32 fill-red-600/5 mx-auto"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-red-600 rounded-xl duration-500 text-4xl flex align-middle justify-center items-center">
+                                <i class="uil uil-heart-break"></i>
+                            </div>
+                        </div>
+                
+                        <h4 class="text-xl font-semibold mt-6">Your wishlist is empty.</h4>
+                        <p class="text-slate-400 my-3">Create your first wishlist request...</p>
+
+                        <a href="" class="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle duration-500 text-sm text-center bg-transparent hover:bg-indigo-600 border border-indigo-600 text-indigo-600 hover:text-white rounded-md mt-2">Create a new wishlist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal -->
+
+        <!-- Start Hero -->
+        <section class="relative table w-full py-20 lg:py-24 bg-gray-50 dark:bg-slate-800">
+            <div class="container relative">
+                <div class="grid grid-cols-1 mt-14">
+                    <h3 class="text-3xl leading-normal font-semibold">Shop Grid</h3>
+                </div><!--end grid-->
+
+                <div class="relative mt-3">
+                    <ul class="tracking-[0.5px] mb-0 inline-block">
+                        <li class="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><a href="index-shop.html">Techwind</a></li>
+                        <li class="inline-block text-base text-slate-950 dark:text-white mx-0.5 ltr:rotate-0 rtl:rotate-180"><i class="uil uil-angle-right-b"></i></li>
+                        <li class="inline-block uppercase text-[13px] font-bold text-indigo-600" aria-current="page">Product Grid Two</li>
+                    </ul>
+                </div>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Hero -->
+
+        <!-- Start -->
+        <section class="relative md:py-24 py-16">
+            <div class="container">
+                <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
+                    <div class="lg:col-span-4 md:col-span-6">
+                        <div class="shadow dark:shadow-gray-800 p-6 rounded-md bg-white dark:bg-slate-900 sticky top-20">
+                            <form>
+                                <div class="grid grid-cols-1 gap-3">
+                                    <div>
+                                        <label for="searchname" class="hidden font-semibold"></label>
+                                        <div class="relative">
+                                            <i data-feather="search" class="w-4 h-4 absolute top-3 start-3"></i>
+                                        
+                                            <input name="search" id="searchname" type="text" class="form-input w-full py-2 px-3 h-10 ps-9 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Search">
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label class="font-semibold">Categories</label>
+                                        <div class="block mt-2">
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" name="radio-colors" value="1" checked>
+                                                    <span class="text-slate-400">Men</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="block mt-2">
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" name="radio-colors" value="1">
+                                                    <span class="text-slate-400">Women</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="block mt-2">
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" name="radio-colors" value="1">
+                                                    <span class="text-slate-400">Kid.s Wear</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="block mt-2">
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" name="radio-colors" value="1">
+                                                    <span class="text-slate-400">Sports</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="block mt-2">
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" name="radio-colors" value="1">
+                                                    <span class="text-slate-400">Jewellery</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="block mt-2">
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" name="radio-colors" value="1">
+                                                    <span class="text-slate-400">Electronics</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label class="font-semibold">Top Products</label>
+                                        <div class="block mt-2">
+                                            <span class="flex items-center">
+                                                <img src="../../assets/images/shop/items/s1.jpg" class="rounded shadow dark:shadow-gray-800 w-12" alt="">
+                                                <span class="ms-3">
+                                                    <span class="block font-semibold">T-shirt (M)</span>
+                                                    <span class="block text-sm text-slate-400">$16USD</span>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div class="block mt-2">
+                                            <span class="flex items-center">
+                                                <img src="../../assets/images/shop/items/s2.jpg" class="rounded shadow dark:shadow-gray-800 w-12" alt="">
+                                                <span class="ms-3">
+                                                    <span class="block font-semibold">Bag</span>
+                                                    <span class="block text-sm text-slate-400">$16USD</span>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div class="block mt-2">
+                                            <span class="flex items-center">
+                                                <img src="../../assets/images/shop/items/s3.jpg" class="rounded shadow dark:shadow-gray-800 w-12" alt="">
+                                                <span class="ms-3">
+                                                    <span class="block font-semibold">Watch (Men)</span>
+                                                    <span class="block text-sm text-slate-400">$16USD</span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <input type="submit" class="py-2 px-5 inline-block tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md w-full" value="Apply Filter">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="lg:col-span-8 md:col-span-6">
+                        <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+                            <div class="lg:col-span-9 md:col-span-8">
+                                <h3 class="text-xl leading-normal font-semibold">Showing 1-8 of 16 results</h3>
+                            </div>
+        
+                            <div class="lg:col-span-3 md:col-span-4 md:text-end">
+                                <label class="font-semibold hidden"></label>
+                                <select class="form-select form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0">
+                                    <option selected>Sort by latest</option>
+                                    <option>Sort by popularity</option>
+                                    <option>Sort by rating</option>
+                                    <option>Sort by price: low to high</option>
+                                    <option>Sort by price: high to low</option>
+                                </select>
+                            </div>
+                        </div><!--end grid-->
+        
+                        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
+                            <div class="group">
+                                <div class="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
+                                    <img src="assets/images/shop/items/s1.jpg" alt="">
+            
+                                    <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                        <a href="shop-cart.html" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-slate-900 border-slate-900 text-white w-full rounded-md">Add to Cart</a>
+                                    </div>
+            
+                                    <ul class="list-none absolute top-[10px] end-4 opacity-0 group-hover:opacity-100 duration-500">
+                                        <li><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-heart"></i></a></li>
+                                        <li class="mt-1"><a href="shop-item-detail.html" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-eye-outline"></i></a></li>
+                                        <li class="mt-1"><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-bookmark-outline"></i></a></li>
+                                    </ul>
+        
+                                    <ul class="list-none absolute top-[10px] start-4">
+                                        <li><a href="javascript:void(0)" class="bg-orange-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5">New</a></li>
+                                    </ul>
+                                </div>
+        
+                                <div class="mt-4">
+                                    <a href="shop-item-detail.html" class="hover:text-indigo-600 text-lg font-semibold">Branded T-Shirt</a>
+                                    <div class="flex justify-between items-center mt-1">
+                                        <p class="text-green-600">$16.00 <del class="text-red-600">$21.00</del></p>
+                                        <ul class="font-medium text-amber-400 list-none">
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--end content-->
+        
+                            <div class="group">
+                                <div class="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
+                                    <img src="assets/images/shop/items/s2.jpg" alt="">
+            
+                                    <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                        <a href="shop-cart.html" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-slate-900 border-slate-900 text-white w-full rounded-md">Add to Cart</a>
+                                    </div>
+            
+                                    <ul class="list-none absolute top-[10px] end-4 opacity-0 group-hover:opacity-100 duration-500">
+                                        <li><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-heart"></i></a></li>
+                                        <li class="mt-1"><a href="shop-item-detail.html" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-eye-outline"></i></a></li>
+                                        <li class="mt-1"><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-bookmark-outline"></i></a></li>
+                                    </ul>
+        
+                                    <ul class="list-none absolute top-[10px] start-4">
+                                        <li><a href="javascript:void(0)" class="bg-green-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5">Featured</a></li>
+                                    </ul>
+                                </div>
+        
+                                <div class="mt-4">
+                                    <a href="shop-item-detail.html" class="hover:text-indigo-600 text-lg font-semibold">Shopping Bag</a>
+                                    <div class="flex justify-between items-center mt-1">
+                                        <p class="text-green-600">$16.00 <del class="text-red-600">$21.00</del></p>
+                                        <ul class="font-medium text-amber-400 list-none">
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--end content-->
+                            
+                            <div class="group">
+                                <div class="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
+                                    <img src="assets/images/shop/items/s3.jpg" alt="">
+            
+                                    <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                        <a href="shop-cart.html" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-slate-900 border-slate-900 text-white w-full rounded-md">Add to Cart</a>
+                                    </div>
+            
+                                    <ul class="list-none absolute top-[10px] end-4 opacity-0 group-hover:opacity-100 duration-500">
+                                        <li><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-heart"></i></a></li>
+                                        <li class="mt-1"><a href="shop-item-detail.html" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-eye-outline"></i></a></li>
+                                        <li class="mt-1"><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-bookmark-outline"></i></a></li>
+                                    </ul>
+                                </div>
+        
+                                <div class="mt-4">
+                                    <a href="shop-item-detail.html" class="hover:text-indigo-600 text-lg font-semibold">Elegent Watch</a>
+                                    <div class="flex justify-between items-center mt-1">
+                                        <p class="text-green-600">$16.00 <del class="text-red-600">$21.00</del></p>
+                                        <ul class="font-medium text-amber-400 list-none">
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--end content-->
+        
+                            <div class="group">
+                                <div class="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
+                                    <img src="assets/images/shop/items/s4.jpg" alt="">
+            
+                                    <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                        <a href="shop-cart.html" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-slate-900 border-slate-900 text-white w-full rounded-md">Add to Cart</a>
+                                    </div>
+            
+                                    <ul class="list-none absolute top-[10px] end-4 opacity-0 group-hover:opacity-100 duration-500">
+                                        <li><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-heart"></i></a></li>
+                                        <li class="mt-1"><a href="shop-item-detail.html" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-eye-outline"></i></a></li>
+                                        <li class="mt-1"><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-bookmark-outline"></i></a></li>
+                                    </ul>
+                                </div>
+        
+                                <div class="mt-4">
+                                    <a href="shop-item-detail.html" class="hover:text-indigo-600 text-lg font-semibold">Casual Shoes</a>
+                                    <div class="flex justify-between items-center mt-1">
+                                        <p class="text-green-600">$16.00 <del class="text-red-600">$21.00</del></p>
+                                        <ul class="font-medium text-amber-400 list-none">
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--end content-->
+        
+                            <div class="group">
+                                <div class="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
+                                    <img src="assets/images/shop/items/s5.jpg" alt="">
+            
+                                    <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                        <a href="shop-cart.html" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-slate-900 border-slate-900 text-white w-full rounded-md">Add to Cart</a>
+                                    </div>
+            
+                                    <ul class="list-none absolute top-[10px] end-4 opacity-0 group-hover:opacity-100 duration-500">
+                                        <li><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-heart"></i></a></li>
+                                        <li class="mt-1"><a href="shop-item-detail.html" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-eye-outline"></i></a></li>
+                                        <li class="mt-1"><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-bookmark-outline"></i></a></li>
+                                    </ul>
+        
+                                    <ul class="list-none absolute top-[10px] start-4">
+                                        <li><a href="javascript:void(0)" class="bg-orange-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5">New</a></li>
+                                    </ul>
+                                </div>
+        
+                                <div class="mt-4">
+                                    <a href="shop-item-detail.html" class="hover:text-indigo-600 text-lg font-semibold">Earphones</a>
+                                    <div class="flex justify-between items-center mt-1">
+                                        <p class="text-green-600">$16.00 <del class="text-red-600">$21.00</del></p>
+                                        <ul class="font-medium text-amber-400 list-none">
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--end content-->
+        
+                            <div class="group">
+                                <div class="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
+                                    <img src="assets/images/shop/items/s6.jpg" alt="">
+            
+                                    <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                        <a href="shop-cart.html" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-slate-900 border-slate-900 text-white w-full rounded-md">Add to Cart</a>
+                                    </div>
+            
+                                    <ul class="list-none absolute top-[10px] end-4 opacity-0 group-hover:opacity-100 duration-500">
+                                        <li><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-heart"></i></a></li>
+                                        <li class="mt-1"><a href="shop-item-detail.html" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-eye-outline"></i></a></li>
+                                        <li class="mt-1"><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-bookmark-outline"></i></a></li>
+                                    </ul>
+                                </div>
+        
+                                <div class="mt-4">
+                                    <a href="shop-item-detail.html" class="hover:text-indigo-600 text-lg font-semibold">Elegent Mug</a>
+                                    <div class="flex justify-between items-center mt-1">
+                                        <p class="text-green-600">$16.00 <del class="text-red-600">$21.00</del></p>
+                                        <ul class="font-medium text-amber-400 list-none">
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--end content-->
+        
+                            <div class="group">
+                                <div class="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
+                                    <img src="assets/images/shop/items/s7.jpg" alt="">
+            
+                                    <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                        <a href="shop-cart.html" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-slate-900 border-slate-900 text-white w-full rounded-md">Add to Cart</a>
+                                    </div>
+            
+                                    <ul class="list-none absolute top-[10px] end-4 opacity-0 group-hover:opacity-100 duration-500">
+                                        <li><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-heart"></i></a></li>
+                                        <li class="mt-1"><a href="shop-item-detail.html" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-eye-outline"></i></a></li>
+                                        <li class="mt-1"><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-bookmark-outline"></i></a></li>
+                                    </ul>
+                                </div>
+        
+                                <div class="mt-4">
+                                    <a href="shop-item-detail.html" class="hover:text-indigo-600 text-lg font-semibold">Sony Headphones</a>
+                                    <div class="flex justify-between items-center mt-1">
+                                        <p class="text-green-600">$16.00 <del class="text-red-600">$21.00</del></p>
+                                        <ul class="font-medium text-amber-400 list-none">
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--end content-->
+        
+                            <div class="group">
+                                <div class="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
+                                    <img src="assets/images/shop/items/s8.jpg" alt="">
+            
+                                    <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                        <a href="shop-cart.html" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-slate-900 border-slate-900 text-white w-full rounded-md">Add to Cart</a>
+                                    </div>
+            
+                                    <ul class="list-none absolute top-[10px] end-4 opacity-0 group-hover:opacity-100 duration-500">
+                                        <li><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-heart"></i></a></li>
+                                        <li class="mt-1"><a href="shop-item-detail.html" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-eye-outline"></i></a></li>
+                                        <li class="mt-1"><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-bookmark-outline"></i></a></li>
+                                    </ul>
+        
+                                    <ul class="list-none absolute top-[10px] start-4">
+                                        <li><a href="javascript:void(0)" class="bg-blue-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5">Sale</a></li>
+                                    </ul>
+                                </div>
+        
+                                <div class="mt-4">
+                                    <a href="shop-item-detail.html" class="hover:text-indigo-600 text-lg font-semibold">Wooden Stools</a>
+                                    <div class="flex justify-between items-center mt-1">
+                                        <p class="text-green-600">$16.00 <del class="text-red-600">$21.00</del></p>
+                                        <ul class="font-medium text-amber-400 list-none">
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                            <li class="inline"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--end content-->
+                        </div><!--end grid-->
+        
+                        <div class="grid md:grid-cols-12 grid-cols-1 mt-8">
+                            <div class="md:col-span-12 text-center">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="inline-flex items-center -space-x-px">
+                                        <li>
+                                            <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-s-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                                <i class="uil uil-angle-left text-[20px] rtl:rotate-180 rtl:-mt-1"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" aria-current="page" class="z-10 w-[40px] h-[40px] inline-flex justify-center items-center text-white bg-indigo-600 border border-indigo-600">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">5</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-e-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                                <i class="uil uil-angle-right text-[20px] rtl:rotate-180 rtl:-mt-1"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div><!--end grid-->
+                    </div>
+                </div>
+            </div><!--end container-->
+
+            <div class="container relative md:mt-24 mt-16">
+                <div class="grid md:grid-cols-12 grid-cols-1 items-center">
+                    <div class="lg:col-span-5 md:col-span-6">
+                        <img src="assets/images/illustrator/envelope.svg" class="mx-auto d-block" alt="">
+                    </div>
+
+                    <div class="lg:col-span-7 md:col-span-6">
+                        <span class="bg-indigo-600/5 text-indigo-600 text-xs font-bold px-2.5 py-0.5 rounded h-5">Mobile Apps</span>
+                        <h4 class="md:text-3xl text-2xl lg:leading-normal leading-normal font-medium my-4">Available for your <br> Smartphones</h4>
+                        <p class="text-slate-400 max-w-xl mb-0">Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 30000+ companies worldwide.</p>
+                        <div class="my-5">
+                            <a href=""><img src="assets/images/app/app.png" class="m-1 inline-block" alt=""></a>
+
+                            <a href=""><img src="assets/images/app/playstore.png" class="m-1 inline-block" alt=""></a>
+                        </div>
+
+                        <div class="inline-block">
+                            <div class="pt-4 flex items-center border-t border-gray-100 dark:border-gray-700">
+                                <i data-feather="smartphone" class="me-2 text-indigo-600 h-10 w-10"></i>
+                                <div class="content">
+                                    <h6 class="text-base font-medium">Install app now on your cellphones</h6>
+                                    <a href="" class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Learn More <i class="uil uil-angle-right-b"></i></a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end gird-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Footer Start -->
+        <footer class="footer bg-dark-footer relative text-gray-200 dark:text-gray-200">    
+            <div class="container relative">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="py-[60px] px-0">
+                            <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
+                                <div class="lg:col-span-3 md:col-span-12">
+                                    <a href="#" class="text-[22px] focus:outline-none">
+                                        <img src="assets/images/logo-light.png" alt="">
+                                    </a>
+                                    <p class="mt-6 text-gray-300">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                                    <ul class="list-none mt-6">
+                                        <li class="inline"><a href="https://1.envato.market/techwind" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-shopping-cart align-middle" title="Buy Now"></i></a></li>
+                                        <li class="inline"><a href="https://dribbble.com/shreethemes" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-dribbble align-middle" title="dribbble"></i></a></li>
+                                        <li class="inline"><a href="https://www.behance.net/shreethemes" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-behance" title="Behance"></i></a></li>
+                                        <li class="inline"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-linkedin" title="Linkedin"></i></a></li>
+                                        <li class="inline"><a href="https://www.facebook.com/shreethemes" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-facebook-f align-middle" title="facebook"></i></a></li>
+                                        <li class="inline"><a href="https://www.instagram.com/shreethemes/" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-instagram align-middle" title="instagram"></i></a></li>
+                                        <li class="inline"><a href="https://twitter.com/shreethemes" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border-gray-800 rounded-md border hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-twitter align-middle" title="twitter"></i></a></li>
+                                    </ul><!--end icon-->
+                                </div><!--end col-->
+                        
+                                <div class="lg:col-span-6 md:col-span-12">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold">Shopping & Clothes</h5>
+
+                                    <div class="grid md:grid-cols-12 grid-cols-1">
+                                        <div class="md:col-span-4">
+                                            <ul class="list-none footer-list mt-6">
+                                                <li><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Men</a></li>
+                                                <li class="mt-[10px]"><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Jackets & Coats </a></li>
+                                                <li class="mt-[10px]"><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Jeans </a></li>
+                                                <li class="mt-[10px]"><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i>  Loungewear </a></li>
+                                                <li class="mt-[10px]"><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Polo shirts </a></li>
+                                                <li class="mt-[10px]"><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Shirts</a></li>
+                                            </ul>
+                                        </div><!--end col-->
+                                
+                                        <div class="md:col-span-4">
+                                            <ul class="list-none footer-list mt-6">
+                                                <li><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Shorts </a></li>
+                                                <li class="mt-[10px]"><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Suits Swimwear </a></li>
+                                                <li class="mt-[10px]"><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> T-shirts </a></li>
+                                                <li class="mt-[10px]"><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Tracksuits </a></li>
+                                                <li class="mt-[10px]"><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Trousers</a></li>
+                                                <li class="mt-[10px]"><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Shirts</a></li>
+                                            </ul>
+                                        </div><!--end col-->
+                                
+                                        <div class="md:col-span-4">
+                                            <ul class="list-none footer-list mt-6">
+                                                <li><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> My account </a></li>
+                                                <li class="mt-[10px]"><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Order History </a></li>
+                                                <li class="mt-[10px]"><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Wish List </a></li>
+                                                <li class="mt-[10px]"><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Newsletter</a></li>
+                                                <li class="mt-[10px]"><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Affiliate</a></li>
+                                                <li class="mt-[10px]"><a href="" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Returns</a></li>
+                                            </ul>
+                                        </div><!--end col-->
+                                    </div>
+                                </div>
+    
+                                <div class="lg:col-span-3 md:col-span-4">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold">Newsletter</h5>
+                                    <p class="mt-6">Sign up and receive the latest tips via email.</p>
+                                    <form>
+                                        <div class="grid grid-cols-1">
+                                            <div class="my-3">
+                                                <label class="form-label">Write your email <span class="text-red-600">*</span></label>
+                                                <div class="form-icon relative mt-2">
+                                                    <i data-feather="mail" class="w-4 h-4 absolute top-3 start-4"></i>
+                                                    <input type="email" class="form-input ps-12 rounded w-full py-2 px-3 h-10 bg-gray-800 border-0 text-gray-100 focus:shadow-none focus:ring-0 placeholder:text-gray-200" placeholder="Email" name="email" required="">
+                                                </div>
+                                            </div>
+                                        
+                                            <button type="submit" id="submitsubscribe" name="send" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div><!--end col-->
+                            </div><!--end grid-->
+                        </div><!--end col-->
+                    </div>
+                </div><!--end grid-->
+
+                <div class="grid grid-cols-1">
+                    <div class="py-[30px] px-0 border-t border-slate-800">
+                        <div class="grid lg:grid-cols-4 md:grid-cols-2">
+                            <div class="flex items-center lg:justify-center">
+                                <i class="uil uil-truck align-middle text-lg mb-0 me-2"></i>
+                                <h6 class="mb-0 font-medium">Free delivery</h6>
+                            </div><!--end content-->
+
+                            <div class="flex items-center lg:justify-center">
+                                <i class="uil uil-archive align-middle text-lg mb-0 me-2"></i>
+                                <h6 class="mb-0 font-medium">Non-contact shipping</h6>
+                            </div><!--end content-->
+
+                            <div class="flex items-center lg:justify-center">
+                                <i class="uil uil-transaction align-middle text-lg mb-0 me-2"></i>
+                                <h6 class="mb-0 font-medium">Money-back quarantee</h6>
+                            </div><!--end content-->
+
+                            <div class="flex items-center lg:justify-center">
+                                <i class="uil uil-shield-check align-middle text-lg mb-0 me-2"></i>
+                                <h6 class="mb-0 font-medium">Secure payments</h6>
+                            </div><!--end content-->
+                        </div><!--end grid-->
+                    </div><!--end-->
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="py-[30px] px-0 border-t border-slate-800">
+                <div class="container relative text-center">
+                    <div class="grid md:grid-cols-2 items-center">
+                        <div class="md:text-start text-center">
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Techwind. Design with <i class="mdi mdi-heart text-red-600"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                        </div>
+
+                        <ul class="list-none md:text-end text-center mt-6 md:mt-0">
+                            <li class="inline"><a href=""><img src="assets/images/payments/american-ex.png" class="max-h-6 inline" title="American Express" alt=""></a></li>
+                            <li class="inline"><a href=""><img src="assets/images/payments/discover.png" class="max-h-6 inline" title="Discover" alt=""></a></li>
+                            <li class="inline"><a href=""><img src="assets/images/payments/master-card.png" class="max-h-6 inline" title="Master Card" alt=""></a></li>
+                            <li class="inline"><a href=""><img src="assets/images/payments/paypal.png" class="max-h-6 inline" title="Paypal" alt=""></a></li>
+                            <li class="inline"><a href=""><img src="assets/images/payments/visa.png" class="max-h-6 inline" title="Visa" alt=""></a></li>
+                        </ul>
+                    </div><!--end grid-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 h-9 w-9 text-center bg-indigo-600 text-white leading-9"><i class="uil uil-arrow-up"></i></a>
+        <!-- Back to top -->
+
+        <!-- Switcher -->
+        <div class="fixed top-[30%] -right-2 z-50">
+            <span class="relative inline-block rotate-90">
+                <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
+                <label class="label bg-slate-900 dark:bg-white shadow dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8" for="chk">
+                    <i class="uil uil-moon text-[20px] text-yellow-500"></i>
+                    <i class="uil uil-sun text-[20px] text-yellow-500"></i>
+                    <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] w-7 h-7"></span>
+                </label>
+            </span>
+        </div>
+        <!-- Switcher -->
+
+        <!-- LTR & RTL Mode Code -->
+        <div class="fixed top-[40%] -right-3 z-50">
+            <a href="" id="switchRtl">
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-bold rtl:block ltr:hidden" >LTR</span>
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-bold ltr:block rtl:hidden">RTL</span>
+            </a>
+        </div>
+        <!-- LTR & RTL Mode Code -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/shufflejs/shuffle.min.js"></script>
+        <script src="assets/libs/jarallax/jarallax.min.js"></script>
+        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- JAVASCRIPTS -->
+    </body>
+</html>
