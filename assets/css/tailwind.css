@@ -60,6 +60,30 @@ body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
 }
+
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.heart {
+  color: red;
+}
+
+.whatsapp-icon {
+  margin-top: 13px;
+  color: #fff;
+}
 /*
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
